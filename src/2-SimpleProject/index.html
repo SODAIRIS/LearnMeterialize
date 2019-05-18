@@ -1,0 +1,321 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+    />
+
+    <title>Document</title>
+    <style>
+      header {
+        background: url(img/man.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+      }
+      .section {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+      }
+      /* for tabs css */
+      .tabs .indicator {
+        background-color: #1a237e;
+      }
+      .tabs .tab a:focus,
+      .tabs .tab a:focus.active {
+        background: transparent;
+      }
+      /* vw: view wight. */
+      @media screen and (max-width: 670px) {
+        header {
+          min-height: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <!-- class="responsive-img" => will make image resize depends on screen size. -->
+    <header>
+      <nav class="nav-wrapper transparent">
+        <div class="container">
+          <a href="" class="brand-logo">Photo</a>
+          <a href="" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons hide-on-med-and-up">menu</i>
+          </a>
+          <ul class="right hide-on-small-and-down">
+            <li><a href="#photos" class="">Photo's</a></li>
+            <li><a href="#services" class="">Services</a></li>
+            <li><a href="#contact" class="">Contact</a></li>
+            <!-- tooltips -->
+            <li>
+              <a
+                href="#"
+                class="tooltipped btn-floating btn-small indigo darken-4"
+                data-tooltip="This is Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="tooltipped btn-floating btn-small indigo darken-4"
+                data-tooltip="This is Facebook"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="tooltipped btn-floating btn-small indigo darken-4"
+                data-tooltip="This is Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="#" class="">Photo's</a></li>
+            <li><a href="#" class="">Services</a></li>
+            <li><a href="#" class="">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- photo / grid -->
+    <!-- mamaterialboxed: will make image big when click on it. -->
+    <section class="container section scrollspy" id="photos">
+      <!-- scrollspy class will make the jump smoothly. -->
+      <div class="row">
+        <div class="col s12 l4">
+          <img
+            src="img/portrait.jpg"
+            alt=""
+            class="responsive-img materialboxed"
+          />
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="indigo-text text-darken-4">Portraits</h2>
+          <p class="truncate">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            corporis quia molestias esse saepe recusandae ab veritatis atque
+            pariatur nostrum quis cupiditate unde minima temporibus debitis.
+            Minima quos delectus hic.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 l4 push-l7 offset-l1">
+          <img src="img/city.jpg" alt="" class="responsive-img materialboxed" />
+        </div>
+        <div class="col s12 l6 pull-l5 right-align offset-l1">
+          <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+          <p class="truncate">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            corporis quia molestias esse saepe recusandae ab veritatis atque
+            pariatur nostrum quis cupiditate unde minima temporibus debitis.
+            Minima quos delectus hic.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 l4 ">
+          <img
+            src="img/nature.jpg"
+            alt=""
+            class="responsive-img materialboxed"
+          />
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="indigo-text text-darken-4">Nature</h2>
+          <p class="truncate">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            corporis quia molestias esse saepe recusandae ab veritatis atque
+            pariatur nostrum quis cupiditate unde minima temporibus debitis.
+            Minima quos delectus hic.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- parallax -->
+    <!-- parallax: the background image move at a different rate and you can overlay different images -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/street.jpg" alt="" class="responsive-img" />
+      </div>
+    </div>
+    <!-- services / tabs -->
+    <section class="container section scrollspy" id="services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text text-darken-4">What I do...</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, eaque excepturi. Minima in libero quibusdam at sit
+            ratione nobis. Sit sapiente perspiciatis expedita consequatur
+            tenetur quas sequi illo repellendus ad?
+          </p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#photography" class="indigo-text text-darken-4"
+                >Photography</a
+              >
+            </li>
+            <li class="tab col s6">
+              <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+            </li>
+          </ul>
+          <div class="col s12" id="photography">
+            <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem, eaque excepturi. Minima in libero quibusdam at sit
+              ratione nobis. Sit sapiente perspiciatis expedita consequatur
+              tenetur quas sequi illo repellendus ad?
+            </p>
+          </div>
+          <div class="col s12" id="editing">
+            <p class="flow-text indigo-text text-darken-4">EDITING</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem, eaque excepturi. Minima in libero quibusdam at sit
+              ratione nobis. Sit sapiente perspiciatis expedita consequatur
+              tenetur quas sequi illo repellendus ad?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/stars.jpg" alt="" class="responsive-img" />
+      </div>
+    </div>
+
+    <!-- contact form -->
+    <section class="section container scrollspy" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis ex rem fugiat expedita quidem numquam, culpa eius iure
+            excepturi et, voluptas a inventore facilis aut consequatur
+            accusantium magnam voluptatem eum!
+          </p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email" />
+              <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class="materialize-textarea"></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="date" class="datepicker" />
+              <label for="date">Choose a date you need me for...</label>
+            </div>
+            <div class="input-field">
+              <p>Services required...</p>
+              <p>
+                <!-- p tag will make each content in new line -->
+                <label>
+                  <input type="checkbox" />
+                  <span>Photography</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <!-- label tag will make other content surround the input itself and the text next to the input tag. -->
+                  <input type="checkbox" />
+                  <span>Editing</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field center">
+              <button class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l6">
+            <h5>About Me</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Reprehenderit magnam rerum laudantium.
+            </p>
+          </div>
+          <div class="col s12 l4 offset-l2">
+            <h5>Connect</h5>
+            <ul>
+              <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+              <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+              <li>
+                <a href="#" class="grey-text text-lighten-3">Linked In</a>
+              </li>
+              <li>
+                <a href="#" class="grey-text text-lighten-3">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container center-align">&copy; 2019 Photo</div>
+      </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+        $(".materialboxed").materialbox();
+        $(".parallax").parallax();
+        $(".tabs").tabs();
+        $(".datepicker").datepicker({
+          disableWeekends: true
+        });
+        $(".tooltipped").tooltip();
+        $(".scrollspy").scrollSpy();
+      });
+    </script>
+  </body>
+</html>
